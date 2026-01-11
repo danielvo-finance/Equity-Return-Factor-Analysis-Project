@@ -9,15 +9,17 @@ import yfinance as yf
 import os
 
 RAW_DIR = "data/raw"
-ticker = input("Enter stock ticker(s) to analyze: ").upper()
-start = input("Enter the start date of the data that you want (e.g. 2015-01-01): ")
-end = input("Enter the end date of the data: ")
 
-def download_data():
-    df = yf.download(ticker, start, end, progress=False, auto_adjust=True)
+tickers = input("Enter stock ticker(s) to analyze (comma seperated): ").upper()
+tickers = [t.strip() for t in tickers.split(",")]
+
+start = input("Enter the start date of the data (e.g. 2015-01-01): ")
+end = input("Enter the end date: ")
+
+def download_data(ticker):
+    df = yf.download(ticker, start=start, end=end, progress=False, auto_adjust=True)
     print(df)
 
 
 
-for t in ticker:
-    download_data()
+download_data(tickers)
