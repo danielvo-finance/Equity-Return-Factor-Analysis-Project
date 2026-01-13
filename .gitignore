@@ -1,3 +1,4 @@
 # Ignore all CSVs in data folders
 data/raw
 data/processed
+data/combined_returns.csv
