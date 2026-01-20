@@ -129,4 +129,5 @@ def plot_pca_variance(eig_vals):
     plt.xlabel("Factor")
     plt.ylabel("Explained Variance")
     plt.title("PCA Factor Explained Variance")
+    plt.savefig("../figures/PCA.png")
     plt.show()
