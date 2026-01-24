@@ -32,3 +32,6 @@ The CAPM and Fama-French three-factor model are essential in finance. These mode
   - Volatility  
   - Value-at-Risk (VaR)  
   - Maximum drawdown  
+
+  ## **NOTE**:
+  **The CSVs are not kept due to the size. If you would like to replicate my findings, please use scripts (scr) 1-3 and follow my notebook!!** 
