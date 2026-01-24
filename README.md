@@ -12,3 +12,23 @@ The CAPM and Fama-French three-factor model are essential in finance. These mode
 - Portfolio construction
 - Risk management
 - and evaluation
+
+## Data
+- **Source:** yfinance
+- **Frequency:** Daily
+- **Time Period:** January 1, 2015 - January 1, 2025
+
+## Methodology
+- **CAPM:**  
+  Estimates each asset’s sensitivity to market returns (beta) and abnormal returns (alpha).
+
+- **Fama-French 3-Factor Model:**  
+  Extends CAPM by including size and value factors to better explain return variation.
+
+- **Principal Component Analysis (PCA):**  
+  Extracts latent factors that explain the majority of variance in asset returns.
+
+- **Risk Metrics:**  
+  - Volatility  
+  - Value-at-Risk (VaR)  
+  - Maximum drawdown  
